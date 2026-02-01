@@ -1,0 +1,258 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+nav {
+    display: flex;           
+    align-items: center;        
+    justify-content: space-between; 
+    padding: 10px 20px;
+}
+
+.nav_logo img {    
+    max-width: 90px;
+    max-height: 200px;  
+    margin-left: 115px;       
+}
+
+.nav_header {
+    display: flex;
+    gap: 50px;
+    list-style: none ;
+    font-size: 23px;
+    margin-right: 285px;
+    margin-top: 3px;
+    cursor: pointer;
+       font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(94, 91, 91);
+  transition: 0.3s;
+}
+
+.btn_hamburguer {
+    display: none; 
+    cursor: pointer;
+}
+
+.btn_hamburguer img {
+    width: 40px;
+    height: 40px;
+}
+
+.cachorro_sorrindo {
+   background-color: rgb(14, 110, 148);
+   border-radius: 16px;
+    position: absolute;
+    right: 124px;
+    top: 83px;
+    height: 550px;     
+}
+
+.titulo {
+    margin-left: 135px;
+    margin-top: 43px;
+    letter-spacing: 3px;
+          font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 34px;
+  font-style: normal;
+  color: rgb(212, 209, 12);
+}
+
+.subtitulo {
+     margin-left: 135px;
+     letter-spacing: 1.5px;
+              font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 70px;
+  font-style: normal;
+  color: rgb(14, 110, 148);
+}
+
+.texto_subtitulo{
+    margin-left: 135px;
+    margin-top: 30px;
+    text-align: justify;
+    padding: 0px 971px 0px 0px;
+    line-height: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-450px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+
+.button_reserva {
+      margin-left: 135px;
+      margin-top: 35px;
+        width: 290px;
+        height: 75px;
+                         font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: white;
+  background-color:rgb(14, 110, 148);
+  border-radius: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.button_reserva:hover {
+    background-color:rgb(1, 41, 56);
+}
+
+.nav_header li:hover {
+   color: rgb(39, 39, 39);
+}
+
+.redes_sociais {
+    display: flex;              
+    gap: 30px;                
+    margin-left: 131px;       
+    margin-top: 90px;
+}
+
+.redes_sociais img {
+    height: 45px;     
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.redes_sociais img:hover {
+    Transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 414px) {
+ 
+ body, html {
+    overflow-x: hidden;
+ }
+
+    .btn_hamburguer {
+    display: block;
+    margin-right: 10px;
+ }
+
+nav {
+  background-color:rgb(14, 110, 148);
+  height: 70px;
+}
+
+.nav_logo img {
+        max-width: 175px;
+        width: 49px;
+        max-height: 200px;
+        margin-left: 25px;
+}
+
+.nav_header {
+    display: none;
+    flex-direction: column;
+}
+
+.nav_header.active {
+        display: flex;
+        margin-bottom: 117vh;
+        margin-left: 280px;
+        margin-top: 10px;
+        color:rgb(0, 0, 0)
+}
+
+.menu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(14, 110, 148);
+        position: absolute;
+        top: 73px;
+        width: 100%;
+        z-index: 99;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        align-items: center;
+        text-align: center;
+        left: 0;
+}
+
+.titulo {
+  margin-left: 10px;
+        margin-top: 54px;
+        letter-spacing: 3px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-size: 25px;
+        font-style: normal;
+        color: rgb(212, 209, 12);
+        text-align: center;
+}
+
+.subtitulo {
+        margin-left: 11px;
+        letter-spacing: 0.5px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-size: 29px;
+        font-style: normal;
+        color: rgb(14, 110, 148);
+        text-align: center;
+        margin-top: 30px;
+}
+
+.cachorro_sorrindo {    
+        height: 322px;
+        margin-right: -100px;
+        margin-top: 90px;
+}
+
+.texto_subtitulo {
+        margin-left: 0px;
+        margin-top: 402px;
+        padding: 0px 45px 0px 45px;
+        line-height: 35px;
+        letter-spacing: 0.5px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-size: 14px;
+        font-style: normal;
+        text-align: center;
+}
+
+.button_reserva {
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 20px;
+}
+
+}
